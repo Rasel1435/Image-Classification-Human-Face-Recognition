@@ -1,5 +1,5 @@
-# Image-Classification
-I am beginning an end-to-end machine learning project or data science project for sports celebrity image classification. During this project, I will give you a feel of how projects are executed in big companies in a typical corporate environment. We will try to classify an image of my favorite 5 sportspeople.
+# Image Classification Human Face Recognition
+I am beginning an end-to-end machine learning project or data science project for sports celebrity image classification and human face recognition. During this project, I will give you a feel of how projects are executed in big companies in a typical corporate environment. We will try to classify an image of my favorite 5 sportspeople.
 
 ## Technologies used in this project,
 1. Python
