@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify, render_template
-import util, wavelet
+import util
+import wavelet
 
 app = Flask(__name__)
 
@@ -8,7 +9,8 @@ app = Flask(__name__)
 def app_html():
     return render_template('app.html')
 
-@app.route('/classify_image', methods=['POST'])
+
+@app.route('/classify_image', methods=['GET','POST'])
 def classify_image():
     image_data = request.form['image_data']
 
@@ -17,6 +19,7 @@ def classify_image():
     response.headers.add('Access-Control-Allow-Origin', '*')
 
     return response
+
 
 if __name__ == "__main__":
     print("Starting Python Flask Server For Sports Celebrity Image Classification")
