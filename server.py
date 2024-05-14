@@ -1,10 +1,14 @@
-from flask import Flask, request, jsonify
-from pipelines import util
+from flask import Flask, request, jsonify, render_template
+import util, wavelet
 
 app = Flask(__name__)
 
 
-@app.route('/classify_image', methods=['GET', 'POST'])
+@app.route('/')
+def app_html():
+    return render_template('app.html')
+
+@app.route('/classify_image', methods=['POST'])
 def classify_image():
     image_data = request.form['image_data']
 
